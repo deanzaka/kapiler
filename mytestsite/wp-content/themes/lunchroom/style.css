@@ -1,0 +1,175 @@
+/*
+Theme Name: Lunchroom
+Theme URI: https://flythemes.net/wordpress-themes/lunchroom-free-wordpress-theme/
+Author: Flythemes
+Author URI: http://flythemes.net
+Description: Lunchroom theme is responsive restaurant WordPress theme. This theme is very useful for restaurants, cafe, bars, pubs and other food industries. This theme has so many features to make theme management very easy. This theme is compatible with the latest version of WordPress and the plugins like woocommerce and contact form 7. This theme is fully responsive create with bootstrap and cross browser compatible. Check demo at: http://flythemes.net/demo/lunchroom/
+
+Version: 1.2.5
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: lunchroom
+Tags: gray, black, dark, one-column, two-columns, right-sidebar, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, photoblogging
+
+Lunchroom WordPress Theme has been created by Flythemes(flythemes.net), 2016.
+Lunchroom WordPress Theme is released under the terms of GNU GPL
+*/
+
+
+*{ margin:0; padding:0; outline:none;}
+body{ margin:0; padding:0; -ms-word-wrap:break-word; word-wrap:break-word; background-color:#f1f1f1; position:relative; font:12px/22px arial !important; color:#5b5b5b;}
+img{ margin:0; padding:0; border:none; max-width:100%; height:auto; }
+section img{max-width:100%;}
+h1,h2,h3,h4,h5,h6{ margin:0; padding:0 0 15px;}
+p{ margin:0; padding:0;}
+a{ text-decoration:none; color:#0fa5d9;}
+a:focus, a:hover{ text-decoration:none !important; color:#666;}
+ul{ margin:0 0 0 15px; padding:0;}
+.clear{ clear:both;}
+.center{ text-align:center; margin-bottom:40px;}
+.middle-align{ margin:0 auto; padding:0;}
+.wp-caption{ margin:0; padding:0; font-size:13px; max-width:100%;}
+.wp-caption-text{ margin:0; padding:0;}
+.sticky{ margin:0; padding:0;}
+.gallery-caption{ margin:0; padding:0;}
+footer.entry-meta{ clear:left;}
+.alignleft, img.alignleft {display: inline; float: left; margin-right:45px; margin-top:4px; margin-bottom:20px; padding:0; }
+.alignright, img.alignright { display: inline; float: right; }
+.aligncenter, img.aligncenter { clear: both; display: block; margin-left: auto; margin-right: auto; margin-top:0; }
+.comment-list .comment-content ul { list-style:none; margin-left:15px;}
+.comment-list .comment-content ul li{margin:5px;}
+.main-container ol{list-style-position:outside; margin-left:20px;}
+.main-container ol li{margin:5px 0;}
+.toggleMenu{display:none;}
+.bypostauthor{ margin:0; padding:0;}
+section{ padding:35px 0; position:relative;}
+h2.section-title { font-family:'Courgette'; font-size:35px; font-weight:400; padding:0 0 15px 0; text-align:center; display:table; margin-bottom:50px;}
+
+a.read-more, a.blog-more{ display:inline-block; font:400 16px 'Roboto Condensed', sans-serif; padding:10px 30px; margin-top:21px; margin-right:15px; border:1px solid #ffffff; background-color:#4b0f04; color:#ffffff;}
+a.read-more { position:relative; left:40%;}
+a.read-more:hover{ color:#ffffff;}
+p.read-more{ clear:both;}
+
+/**=== HEADER ===**/
+#header { width:100%; background-color:#ffffff;}
+.logo { padding-top:28px;}
+.logo h1 { margin:0; padding:0; font:700 30px 'Lobster'; }
+.logo p { padding-top:2%;}
+.call { float:right; min-height:40px;}
+.call h3 { margin-bottom:0; padding-bottom:0; font:700 25px 'Rosario';}
+.fa-phone { color:#000; margin-right:5px; position:relative; top:7px;}
+
+.main-container{margin:0; padding:0;}
+
+.toggle{display:block;}
+
+@media screen and (min-width:1000px){
+.main-nav { margin:0; padding:0;}
+.main-nav ul { margin:0; padding:0; float:right; font:400 15px 'Rosario';}
+.main-nav ul li ul, .main-nav ul li ul.sub-menu li ul{ display:none;}
+.main-nav ul li { list-style:none; display:inline-block; padding:17px 0px; position:relative; }
+.main-nav ul li:hover ul{ position:absolute; display:block; background-color:#000000; z-index:99; padding:0; left:38px; width:200px;}
+.main-nav ul li ul.sub-menu li:hover ul{position:absolute; display:block; background-color:#000000; z-index:99; padding:0; left:180px; width:200px; top:0;}
+.main-nav ul li:hover ul li{ padding:10px 20px; display:block;}
+.main-nav ul li:hover ul li a{ padding:0; color:#ffffff;}
+.main-nav ul li a { text-decoration:none; color:#4b0f04; padding:17px 0 0 38px;}
+}
+
+
+/** Blog post css **
+-----------------------------------------------------------------*/
+section#works{ padding-bottom:0;}
+.blogposts { width:31.6%; margin:0 2% 2% 0; display:inline-block; position:relative; vertical-align:top;}
+.blogposts .author-name{ font-family:'Open Sans',sans-serif; margin-bottom:15px;}
+.blogposts h2 { color:#302f2f; font-weight:normal; font-family:'Oswald'; font-size:17px; text-transform:uppercase; margin:0; padding:0;}
+.blogposts h2 a {color:#302f2f;}
+.blogposts a.blog-more{ color:#ffffff;}
+.lastcols { margin-right:0 !important;}
+
+/* --------- Pages ------- */
+.content-area{ width:1160px; margin:0 auto; padding:50px 0;}
+.site-main{ width:800px; margin:0; padding:0; float:left;}
+#sitefull{ width:auto !important;}
+#nosidebar{ width:80%; margin:0 auto; float:none; text-align:center;}
+#sidebar{ width:270px; margin:0; padding:0; float:right;}
+
+/*copyright css*/
+.copyright-wrapper { position:relative; padding:20px 0; background-color:#000000; color:#ffffff;}
+.copyright-wrapper .inner{width:1170px; margin:0 auto;}
+.footer-menu{ float:right; margin:0; padding:0;}
+.footer-menu a{ color:#ffffff;}
+.copyright ul li, .footer-menu ul li{ display:inline-block; margin:0; padding:0 5px 0 5px; border-right:1px solid #fff;}
+.footer-menu ul li:last-child { border-right:none;}
+.footer-menu ul ul{ display:none;}
+.copyright { float:left; margin:auto; text-align:left;}
+
+/* ------ Contact Form ------ */
+.wpcf7{ margin:0; padding:0; font:400 15px 'Roboto Condensed', sans-serif; color:#222222;}
+.wpcf7 form{ margin:0; padding:0;}
+.wpcf7 form span.last{ float:none !important;}
+.wpcf7 form input[type="text"], .wpcf7 form input[type="email"], .wpcf7 form input[type="tel"], .wpcf7 form input[type="url"], .wpcf7 form input[type="date"], .wpcf7 form select, .leftdiv input[type="text"], .leftdiv input [type="url"], .leftdiv input[type="email"], .leftdiv input[type="tel"], .wpcf7 form textarea, .rightdiv textarea{ width:94%; background-color:#f8f8f8; border:1px solid #e6e5e5; padding:10px; margin-top:15px; font:400 14px 'Roboto Condensed', sans-serif; color:#777777;}
+.wpcf7 form textarea, .rightdiv textarea{height:132px;}
+.wpcf7 form input[type="checkbox"], .wpcf7 form input[type="radio"], .wpcf7 form input[type="file"]{ margin-top:10px; padding:0;}
+span.wpcf7-list-item{ margin:0 15px 0 0 !important;}
+.entry-content p input[type="submit"], .wpcf7 form input[type="submit"], #contact input[type="submit"]{font:400 15px 'Roboto Condensed', sans-serif; margin:25px 0 0 0; padding:5px 20px; border:none; color:#ffffff; border-radius:4px; -moz-border-radius:4px; -o-border-radius:4px; -webkit-border-radius:4px; cursor:pointer; background-color:#ef4323;}
+
+/* ------ Pagination ------ */
+form.search-form label span{ display:none;}
+.spacer20{height:20px; clear:both;}
+.nav-links{display:table; clear:both; width:100%;}
+.nav-links span.current, .nav-links a:hover{list-style:none; margin:20px 0; color:#ffffff;}
+.nav-links a, .nav-links span{color:#ffffff; padding:5px 10px; display:inline-block;}
+.nav-links a.page-numbers, .nav-links span.dots{background:#2e2e2e;}
+.nav-links .nav-previous{ float:left;}
+.nav-links .nav-previous a, .nav-links .nav-next a{ background-color:#2e2e2e;}
+.nav-links .nav-previous a:hover, .nav-links .nav-next a:hover{ margin:0 !important;}
+.nav-links .nav-next{ float:right;}
+h1.entry-title, h1.page-title{padding-bottom:0; margin-bottom:0; font-size:30px; font:400 30px 'Courgette'; color:#414141;}
+h2.entry-title { padding-bottom:0; margin-bottom:0; font:700 30px 'Courgette';}
+h1.screen-reader-text{font:400 35px 'Courgette';}
+h2.comments-title{font:400 25px 'Courgette';}
+article.tag-sticky-2{background:#f6f6f6; padding:10px;}
+article img{height:auto;}
+article p{margin:10px 0;}
+.post-date{display:inline;}
+.post-comment{display:inline;}
+.post-categories{display:inline;}
+.post-tags{display:inline;}
+form.search-form{margin-bottom:15px;}
+input.search-field, .post-password-form input[type=password]{border:1px #eee solid; padding:4px;}
+input.search-submit, .post-password-form input[type=submit]{border:none; color:#ffffff; padding:4px 10px; cursor:pointer;}
+aside.widget{margin-bottom:30px;}
+aside.widget ul{ list-style:disc; margin-left:13px;}
+.webicon{font-size:20px;}
+#sidebar ul li{margin:5px 0;}
+.comment-list, ol.comment-list{list-style:none; margin-left:0; margin-top:20px; margin-bottom:20px;}
+.comment-list ul, ol.comment-list ul{list-style:none;}
+.comment-list li.comment{margin-top:20px;}
+.comment-list .comment-content h1, .comment-list .comment-content h2, .comment-list .comment-content h3, .comment-list .comment-content h4, .comment-list .comment-content h5, .comment-list .comment-content h6{margin-top:15px;}
+h3.widget-title{ font-size:18px; border-bottom:1px solid #cccccc; padding-bottom:15px; margin-bottom:15px; font:400 20px 'Courgette';}
+p.comment-form-comment label{ vertical-align:top;}
+p.form-submit input{ padding:5px 10px; border:none; cursor:pointer; color:#ffffff;}
+
+.blog-post-repeat{ border-bottom:1px solid #cccccc; margin-bottom:40px;}
+
+/* woocommerce */
+a.added_to_cart{background:#e1472f; padding:5px; display:inline-block; color:#fff; line-height:1;}
+a.added_to_cart:hover{background:#000000;}
+a.button.added:before{content:'' !important;}
+#bbpress-forums ul li{padding:0;}
+#subscription-toggle a.subscription-toggle{padding:5px 10px; display:inline-block; color:#e1472f; margin-top:4px;}
+textarea.wp-editor-area{border:1px #ccc solid;}
+.woocommerce input[type=text], .woocommerce textarea{border:1px #ccc solid; padding:4px;}
+form.woocommerce-ordering select{ padding:5px; color:#777777;}
+.woocommerce table.shop_table th, .woocommerce-page table.shop_table th{ font-family:'Roboto Condensed',sans-serif; color:#ff8a00;}
+.woocommerce ul.products li.product .price, .woocommerce-page ul.products li.product .price{ color:inherit !important;}
+h1.product_title, p.price{ margin-bottom:10px;}
+a.blogthumbs img{ width:100%;}
+
+/**/
+.one_half h2.section-title{ margin:0 0 23px !important;}
+h2.section-title{ margin:0 auto 23px auto;}
+#contact .column-2{ width:65%; float:left; margin:0;}
+#contact .column-2.last_column{ width:25%; margin-left:9%; }
+#contact .column-2.last_column span{ text-transform:capitalize; font:400 14px 'Open Sans',sans-serif; }
+#contact .column-2.last_column a{color:#666666;}
