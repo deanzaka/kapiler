@@ -21,23 +21,40 @@ if (!$db_selected) {
 
 $name = $_POST['NAME'];
 $email = $_POST['EMAIL'];
-$tlpn = $_POST['TLPN'];
+$phone = $_POST['PHONE'];
 $val = $_POST['VAL'];
 $conv = $_POST['CONV'];
 
+
 //echo $name . $email . $tlpn . $val . $conv;
 
-$sql = "INSERT INTO donate (name, email, tlpn, val, conv) VALUES ('$name','$email','$tlpn','$val','$conv')";
+$name_regex = '~^[a-zA-Z\s\.\']+$~';
+$email_regex = '~^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$~';
+$phone_regex = '~^0[0-9]{8,15}$~';
 
-if(!mysql_query($sql)) {
-	die('Error: ' . mysql_error());
+if(!preg_match($name_regex,$name)) {
+	$text = 'Error: NAME is invalid';
+} else if(!preg_match($email_regex,$email)) {
+	$text = 'Error: EMAIL is invalid';
+} else if(!preg_match($phone_regex,$phone)) {
+	$text = 'Error: PHONE is invalid';
+} else {
+	$text = 'Thanks for submitting data. You\'ll be contacted by us soon.';
+
+	$sql = "INSERT INTO donate (name, email, tlpn, val, conv) VALUES ('$name','$email','$phone','$val','$conv')";
+
+	if(!mysql_query($sql)) {
+		die('Error: ' . mysql_error());
+	}
 }
+
+
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Test DB</title>
+	<title>Donasi</title>
 	<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -48,7 +65,7 @@ if(!mysql_query($sql)) {
 </head>
 <body>
 	<div class= "container">
-		<div class="jumbotron">Thanks for submitting data. You'll be contacted by us soon.</div>
+		<div class="jumbotron"><?php echo $text ?></div>
 	</div>
 </body>
 </html>
