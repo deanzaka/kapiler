@@ -23,7 +23,7 @@ $name = $_POST['NAME'];
 $email = $_POST['EMAIL'];
 $phone = $_POST['PHONE'];
 $val = $_POST['VAL'];
-$conv = $_POST['CONV'];
+$conv = $val * 10000;
 
 
 //echo $name . $email . $tlpn . $val . $conv;
