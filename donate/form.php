@@ -25,7 +25,6 @@ $phone = $_POST['PHONE'];
 $val = $_POST['VAL'];
 $conv = $val * 10000;
 
-
 //echo $name . $email . $tlpn . $val . $conv;
 
 $name_regex = '~^[a-zA-Z\s\.\']+$~';
@@ -41,7 +40,7 @@ if(!preg_match($name_regex,$name)) {
 } else {
 	$text = 'Thanks for submitting data. You\'ll be contacted by us soon.';
 
-	$sql = "INSERT INTO donate (name, email, tlpn, val, conv) VALUES ('$name','$email','$phone','$val','$conv')";
+	$sql = "INSERT INTO donate (name, email, tlpn, val, conv, platform_id) VALUES ('$name','$email','$phone','$val','$conv', 1)";
 
 	if(!mysql_query($sql)) {
 		die('Error: ' . mysql_error());
@@ -55,17 +54,27 @@ if(!preg_match($name_regex,$name)) {
 <html>
 <head>
 	<title>Donasi</title>
-	<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="fonts/icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet" media="screen">
+	<link href="css/owl.theme.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
 
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- Colors -->
+	<link href="css/css-index-orange.css" rel="stylesheet" media="screen">
+	<!-- <link href="css/css-index-green.css" rel="stylesheet" media="screen"> -->
+	<!-- <link href="css/css-index-purple.css" rel="stylesheet" media="screen"> -->
+	<!-- <link href="css/css-index-red.css" rel="stylesheet" media="screen"> -->
+	<!-- <link href="css/css-index-orange.css" rel="stylesheet" media="screen"> -->
+	<!-- <link href="css/css-index-yellow.css" rel="stylesheet" media="screen"> -->
 
-		<link rel="stylesheet" href="styles/main.css">
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" />
 </head>
 <body>
 	<div class= "container">
-		<div class="jumbotron"><?php echo $text ?></div>
+		<div class="col-md-10 col-md-offset-1 col-sm-12 feature-title"><h2><?php echo $text ?></h2></div>
 	</div>
 </body>
 </html>

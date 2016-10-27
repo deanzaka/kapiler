@@ -9,6 +9,21 @@
 **/
 
 
+label.valid {
+	background: url(../images/valid.png) right center no-repeat;
+	font-weight: bold;
+	color: green;
+	padding: 2px 8px;
+	margin-top: 2px;
+}
+
+label.error {
+	font-weight: bold;
+	color: red;
+	padding: 2px 8px;
+	margin-top: 2px;
+}
+
 
 html, body {
 
