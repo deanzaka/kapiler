@@ -7,6 +7,10 @@ $("#value").keyup(function() {
     $("#value").val(this.value.match(/[0-9]*/));
 });
 
+$("#phone").keyup(function() {
+    $("#phone").val(this.value.match(/[0-9]*/));
+});
+
 document.querySelector( "form" )
         .addEventListener( "invalid", function( event ) {
             event.preventDefault();
