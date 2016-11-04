@@ -1,16 +1,3 @@
-$("#value").keyup(function() {
-       var val = $("#value").val() || 0;
-       $("#converse").html(parseFloat(val) * 10000);
-});
-
-$("#value").keyup(function() {
-    $("#value").val(this.value.match(/[0-9]*/));
-});
-
-$("#phone").keyup(function() {
-    $("#phone").val(this.value.match(/[0-9]*/));
-});
-
 document.querySelector( "form" )
         .addEventListener( "invalid", function( event ) {
             event.preventDefault();
@@ -18,6 +5,28 @@ document.querySelector( "form" )
 
 $(document).ready(function(){
 
+		// $("#value").keyup(function() {
+		//        var val = $("#value").val() || 0;
+		//        $("#converse").html(parseFloat(val) * 10000);
+		// });
+
+		$("#value").keyup(function() {
+		    $("#value").val(this.value.replace(/\./g,''));
+		    $("#value").val(this.value.replace(/[^0-9]/g,''));
+
+
+				var val = parseFloat($("#value").val()) * 10000 || 0;
+				var str = val.toString();
+				str = str.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+				str = 'Rp ' + str;
+				$("#converse").html(str);
+
+		    $("#value").val(this.value.replace(/\B(?=(\d{3})+(?!\d))/g, "."));
+		});
+
+		$("#phone").keyup(function() {
+		    $("#phone").val(this.value.match(/[0-9]*/));
+		});
 
 		$('#donation-form').validate({
 	    rules: {

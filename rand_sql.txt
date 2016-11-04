@@ -1,0 +1,27 @@
+create table donasi_beras (
+    prefix varchar(2) not null default 'DW',
+    id int(8) unsigned zerofill not null AUTO_INCREMENT,
+    name varchar(64) not null,
+    email varchar(64) not null,
+    phone varchar(64) not null,
+    val int(11) unsigned not null,
+    conv bigint(11) unsigned not null,
+    create_time timestamp default CURRENT_TIMESTAMP not null,
+    platform_id int(1) unsigned not null,
+    unique_code int(3) not null,
+    primary key (`prefix`, `id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
+
+CREATE TABLE `rand_pool` (
+  `id` int(11) NOT NULL auto_increment,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
+
+CREATE PROCEDURE fill()
+BEGIN
+  DECLARE i INT DEFAULT 999;
+  WHILE i > 0 DO
+    insert rand_pool values (null);
+    SET i = i - 1;
+  END WHILE;
+END
