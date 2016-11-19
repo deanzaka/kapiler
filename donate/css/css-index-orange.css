@@ -270,7 +270,39 @@ a:hover {
 
 }
 
-#converse {
+.konversi {
+  
+  align: center; 
+  width: 100%;
+  display: block;
+	border: 3px	solid #ff7418; 
+  color: #555;
+  background-color: #fff;
+  
+	height: 56px;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;          
+}
+
+#converse.konversi {
+  
+  align: center; 
+  width: 100%;
+  display: block;
+	border: 3px	solid #ff7418; 
+  color: #555;
+  background-color: #fff;
+  
+	height: 56px;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;          
+}
+
+#uniq.uniq {
   
   align: center; 
   width: 100%;

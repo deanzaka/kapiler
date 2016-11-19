@@ -15,7 +15,7 @@ $(document).ready(function(){
 		    $("#value").val(this.value.replace(/[^0-9]/g,''));
 
 
-				var val = parseFloat($("#value").val()) * 10000 || 0;
+				var val = parseFloat($("#value").val()) * 12500 || 0;
 				var str = val.toString();
 				str = str.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 				str = 'Rp ' + str;
