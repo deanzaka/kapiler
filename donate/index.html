@@ -2,12 +2,8 @@
 <html>
 <head>
 
-<!-- /.website title -->
-<title>#DonasiUntukPanti</title>
+<title>#BerasUntukPanti</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<!-- Favicon -->
-    <!--<link rel="shortcut icon" type="image/icon" href="images/icon2.png"/>-->
-<!-- CSS Files -->
 <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="fonts/icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
@@ -17,11 +13,6 @@
 
 <!-- Colors -->
 <link href="css/css-index-orange.css" rel="stylesheet" media="screen">
-<!-- <link href="css/css-index-green.css" rel="stylesheet" media="screen"> -->
-<!-- <link href="css/css-index-purple.css" rel="stylesheet" media="screen"> -->
-<!-- <link href="css/css-index-red.css" rel="stylesheet" media="screen"> -->
-<!-- <link href="css/css-index-orange.css" rel="stylesheet" media="screen"> -->
-<!-- <link href="css/css-index-yellow.css" rel="stylesheet" media="screen"> -->
 
 <!-- Google Fonts -->
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" />
@@ -34,6 +25,29 @@
 <div id="preloader"></div>
 <div id="top"></div>
 
+<!-- NAVIGATION -->
+<div id="menu">
+	<nav class="navbar-default babi" role="navigation">
+		<div class="tos container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-backyard">
+				  	<span class="sr-only">Toggle navigation</span>
+				  	<span class="icon-bar"></span>
+				  	<span class="icon-bar"></span>
+				  	<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-left navbar-brand site-name" href="#top"><img src="images/logo2.png" alt="logo"></a>
+			</div>
+			<div id="navbar-scroll" class="collapse navbar-collapse navbar-backyard navbar-right">
+				<ul class="nav navbar-nav">
+					<li><a href="/beraspanti" target="_self">Donasi</a></li>
+					<li><a href="/beraspanti/form.php">Konfirmasi</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+
 <!-- /.parallax full screen background image -->
 <div class="fullscreen landing parallax" style="background-image:url('images/bg.jpg');" data-img-width="2000" data-img-height="1333" data-diff="100">
 	
@@ -41,20 +55,19 @@
 		<div class="container" style="margin-top: -30px;">
 			<div class="row">
 				<div class="col-md-7">
-				
 					<!-- /.logo -->
-					<div class="logo wow fadeInDown"> <a href=""><img src="images/logo.png" alt="logo"></a></div>
+					<!--<div class="kura2 logo wow fadeInDown"> <a href=""><img src="images/logo.png" alt="logo"></a></div>-->
 
 					<!-- /.main title -->
-						<h3 class="beras wow fadeInUp">#BerasUntukPanti</h3>
-						<h2 class="wow fadeInLeft">
+						<h3 class="beras wow fadeInUp" style="margin-top: 150px;">#BerasUntukPanti</h3>
+						<h2 class="beras-text wow fadeInLeft">
 						Beras untuk Panti, <br>Mimpi untuk Anak-Anak Panti
 						</h2>
 
 					<!-- /.header paragraph -->
 					<div class="landing-text wow fadeInUp">
 						<p>Banyak panti di sekitar kita membutuhkan beras untuk makan sehari-hari anak-anak panti. Melalui Kapiler dan Dompet Dhuafa, beras dibeli dari petani secara langsung oleh donatur melalui program ini dan kemudian beras tersebut akan disalurkan ke panti-panti.</p>
-						<p>Hubungi kami : <b>+62 878 8076 2046</b> (Dhika)</p>
+						<p>Hubungi kami : <b>+62 857 8576 1947</b> (Nesia)</p>
 					</div>				  
 
 					<!-- /.header button -->
@@ -68,7 +81,6 @@
 				
 					<div class="signup-header wow fadeInUp">
 						<h3 class="form-title text-center">Ayo, bersama-sama hadirkan beras untuk anak-anak panti di Indonesia!</h3>
-						<!-- <form class="form-header" action="http://moxdesign.us10.list-manage.com/subscribe/post" role="form" method="POST" id="#"> -->
 						<form class="form-header" action="form.php" role="form" method="POST" id="donation-form">
 						<input type="hidden" name="u" value="503bdae81fde8612ff4944435">
 						<input type="hidden" name="id" value="bfdba52708">
@@ -84,13 +96,8 @@
 							<div class="form-group">
 								<!--<div class="form-group col-sm-5">-->
 									<input class="form-control input-lg" name="VAL" id="value" type="text" placeholder="Donasi (Kg)" maxlength="9" required>
-								<!--</div>
-								<div class="col-sm-1"><h2>Rp</h2></div>
-								<div class="form-group col-sm-6">
-									<h2 class="konversi" type="number" name="CONV" id="converse">0</h2>
-								</div>-->
 							</div>
-							<div class="form-group last">
+							<div class="form-group last" style="margin-bottom: 70px;">
 								<div class="col-sm-6" style="font-color: red;">
 									<h2 class="konversi" type="text" name="CONV" id="converse">Rp 0</h2>
 								</div>
@@ -98,55 +105,22 @@
 									<input type="submit" class="btn btn-warning btn-block btn-lg" value="Salurkan Donasi">
 								</div>
 							</div>
-							<br>
-							<br>
 							<p></p>
 						</form>
 					</div>				
-				
 				</div>
 			</div>
 		</div> 
 	</div> 
 </div>
  
-<!-- NAVIGATION -->
-<div id="menu">
-	<nav class="navbar-wrapper navbar-default" role="navigation">
-		<div class="container">
-			  <div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-backyard">
-				  <span class="sr-only">Toggle navigation</span>
-				  <span class="icon-bar"></span>
-				  <span class="icon-bar"></span>
-				  <span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand site-name" href="#top"><img src="images/logo2.png" alt="logo"></a>
-			  </div>
-	 <!--
-			  <div id="navbar-scroll" class="collapse navbar-collapse navbar-backyard navbar-right">
-				<ul class="nav navbar-nav">
-					<li><a href="#intro">About</a></li>
-					<li><a href="#feature">Features</a></li>
-					<li><a href="#download">Download</a></li>
-					<li><a href="#testi">Reviews</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			  </div>
-			  -->
-		<br>
-		<br>
-		</div>
-	</nav>
-</div>
-
 <!-- /.intro section -->
 <div id="intro">
 	<div class="container">
 		<div class="row">
 
 		<!-- /.intro content -->
-			<div class="col-md-6 wow slideInLeft">
+			<div class="intro-text col-md-6 wow slideInLeft">
 				
 				<h2>Beras Untuk Panti</h2>
 				<p>Beras Untuk Panti adalah sebuah program kerjasama Kapiler Indonesia dan Dompet Dhuafa.</p>
@@ -156,84 +130,115 @@
 			</div>
 		<!-- /.intro image -->
 			<div class="col-md-6 intro-pic wow slideInRight">
-				<img src="images/intro-image.jpg" alt="image" class="img-responsive">
+				<img src="images/b6.jpg" alt="image" class="img-responsive  img-rounded">
 			</div>	
 		</div>			  
 	</div>
 </div>
 
 <!-- /.client section -->
-<div id="client"> 
-		<div class="container">
+<div id="client" class="marmut"> 
+	<div class="container">
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1 col-sm-12 text-center feature-title">
 				<h2>Bagaimana Kami Bekerja?</h2>
 			</div>
 		</div>
-			<div class="row">
-				<div class="col-sm-4 col-sm-offset-4" style="text-align: center;" >
-					<h3>Donatur</h3>
-					<img alt="client" src="images/Donatur.jpg" class="wow fadeInUp">
+		<div class="row">
+			<div class="wow fadeInUp" style="text-align: center;" >
+				<p>Donatur & Angel Investor</p>
+				<img alt="client" src="images/Donatur.jpg">
+				<div class="kudanil wow fadeInUp" style="text-align: center;">
+					<h4>Berdonasi</h4>
+					<img src="images/tes3.png" class="kudaponi">
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-sm-4 col-sm-offset-4" style="text-align: center;">
-					<img alt="client" src="images/tes3.png" class="wow fadeInUp" style="max-height: 130px">
-				</div>
-				<div class="col-sm-1" style="text-align: center;">
-					<h4 style="margin-left: -300px;"><br><b>Berdonasi</b></h4>
-				</div>
+		</div>
+		<div class="row"><!--border: 1px solid red-->
+			<div class="col-sm-3 wow fadeInLeft" style="; text-align: center;">
+				<img alt="client" src="images/1.jpg">
+				<p>Pemberdayaan Petani oleh Dompet Duafa</p>
 			</div>
-			<div class="row"><!--border: 1px solid red-->
-				<div class="col-sm-3" style="; text-align: center;">
-					<img alt="client" src="images/Farmer.jpg" class="wow fadeInLeft">
-					<p>Pemberdayaan Petani oleh Dompet Duafa</p>
+			<div class="col-sm-6" style="text-align: center;">
+				<div class="col-sm-3 wow fadeInLeft kudanil">
+					<h4>Menghasilkan</h4>
+					<img src="images/tes25.png">
 				</div>
-				<div class="col-sm-1" style="text-align: center;">
-					<h4 style="margin-left: -20px;"><b>Menghasilkan</b></h4>
-					<img alt="client" src="images/tes2.png" class="wow fadeInLeft" style="max-height: 150px; margin-left: -20px;">
-				</div>
-
-
-				<div class="col-sm-4" style="text-align: center;">
-					<img alt="client" src="images/beras.jpg" class="wow fadeInUp">
+				<div class="col-sm-6 wow fadeInUp">
+					<img src="images/beras.jpg">
 					<p>Penerimaan Beras oleh Kapiler</p>
 				</div>
-				<div class="col-sm-1" style="text-align: center;">
-					<h4 style="margin-left: -70px;"><b>Menyalurkan</b><h4>
-					<img alt="client" src="images/tes2.png" class="wow fadeInLeft" style="max-height: 150px; margin-left: -70px;">
-				</div>
-				<div class="col-sm-3" style="text-align: center;">
-					<img alt="client" src="images/kapiler.jpg" class="wow fadeInRight">
-					<p>Panti yang telah terdaftar di Kapiler</p>
+				<div class="col-sm-3 wow fadeInRight kudanil">
+					<h4>Menyalurkan<h4>
+					<img src="images/tes25.png">
 				</div>
 			</div>
-		</div>	
+			<div class="col-sm-3 wow fadeInRight" style="text-align: center;">
+				<img alt="client" src="images/2.jpg">
+				<p>Panti yang telah terdaftar di Kapiler</p>
+			</div>
+		</div>
+	</div>	
 </div>
+
+<div class="tomket"> 
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1 col-sm-12 text-center feature-title">
+				<h2 style="font-weight: lighter;">Bagaimana Kami Bekerja?</h2>
+				<div style="text-align: center;">
+					<img src="images/alur22.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="client"> 
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1 col-sm-12 text-center feature-title">
+				<h2>Fair Trade yang Kami Lakukan</h2>
+			</div>
+		</div>
+		<div class="col-sm-4" style="text-align: center;">
+			<img alt="client" src="images/1.jpg" class="wow fadeInRight">
+			<p>Petani<br>Rp. 10.000</p>
+		</div>
+		<div class="col-sm-4" style="text-align: center;">
+			<img alt="client" src="images/3.jpg" class="wow fadeInLeft">
+			<p>Kapiler & DD<br> Rp. 2.500<br>(Uang ini digunakan untuk operasional<br>& Pengembangan Program)</p>
+		</div>
+		<div class="col-sm-4" style="text-align: center;">
+			<img alt="client" src="images/2.jpg" class="wow fadeInDown">
+			<p>Beras yang Terkumpul untuk<br>Panti yang terdaftar di Kapiler</p>
+		</div>
+	</div>
+</div>	
 
 <!-- /.feature 2 section -->
 <div id="feature-2">
 	<div class="container">
 		<div class="row feature-2">
 			<!-- /.feature content -->
-			<div class="col-md-6 wow fadeInLeft">
+			<div class="feature-2-text col-md-6 wow fadeInLeft">
 				<h2>Kenapa Harus Berdonasi Beras di Kapiler Indonesia?</h2>
 				<div class="feat-list">
 					<i class="pe-7s-check pe-5x pe-va wow fadeInUp"></i>
 					<div class="inner">
-						<h4>Donasi disalurkan <span class="highlight">tepat sasaran</span>, sesuai dengan panti yang membutuhkan.</h4>
+						<h4 class="kroco">Donasi disalurkan <span class="highlight">tepat sasaran</span>, sesuai dengan panti yang membutuhkan.</h4>
 					</div>
 				</div>
 				<div class="feat-list">
 					<i class="pe-7s-check pe-5x pe-va wow fadeInUp"></i>
 					<div class="inner">
-						<h4>Membantu membeli beras secara <span class="highlight">langsung</span> dari Petani Indonesia.</h4>
+						<h4 class="kroco">Membantu membeli beras secara <span class="highlight">langsung</span> dari Petani Indonesia.</h4>
 					</div>
 				</div>
 				<div class="feat-list">
 					<i class="pe-7s-check pe-5x pe-va wow fadeInUp"></i>
 					<div class="inner">
-						<h4>Laporan donasi diberikan secara <span class="highlight">transparan</span> dan kirim kepada setiap Donatur yang membutuhkan.</h4>
+						<h4>Laporan donasi diberikan secara <span class="highlight">transparan</span> untuk setiap Donatur yang membutuhkan.</h4>
 					</div>
 				</div>
 				<div class="feat-list">
@@ -244,7 +249,7 @@
 				</div>
 			</div>
 			<!-- /.feature image -->
-			<div class="col-md-6 feature-2-pic wow fadeInRight" align="center">
+			<div class="feat-img col-md-6 feature-2-pic wow fadeInRight" align="center">
 				<img src="images/feature2-image.jpg" alt="macbook" class="img-responsive img-rounded" height=900 width=552>
 			</div>	
 
@@ -270,7 +275,7 @@
 					
 					<!-- /.download button -->
 						<div class="download-cta wow fadeInLeft text-center">
-							<a href="http://www.w3schools.com"><img src="images/play.png" width="306.375" height="90.75"></a>
+							<a href="https://play.google.com/store/apps/details?id=com.kapiler.kapilerapp&hl=en"><img class="tes" src="images/play.png" width="306.375" height="90.75"></a>
 						</div>
 				</div>	
 			</div>	
@@ -281,41 +286,13 @@
 <!-- /.contact section -->
 <div id="contact">
 	<div style="background-image:url('images/closing.jpg'); background-position: center; background-repeat: no-repeat;">
-		
-			<div class="container">
-				<div class="row contact-row">
-				<div class="col-md-3 col-md-offset-2 col-sm-6 text-center">
-					<!-- /.download button -->
-						<div class="download-cta">
-							<img src="images/logoKID.png" width="375" height="133.5">
-						</div>
-				</div>
-				<div class="col-md-3 col-md-offset-1 col-sm-6 text-center">
-					<!-- /.download button -->
-						<div class="download-cta">
-							<img src="images/logoDD.png" width="320" height="130.40">
-						</div>
-				</div>
-
-
-
-					<!-- /.address and contact 
-					<div class="col-sm-3 contact-left wow fadeInUp">
-						<h2><span class="highlight">Get</span> in touch</h2>
-							<ul class="ul-address">
-							<li><i class="pe-7s-map-marker"></i>1600 Amphitheatre Parkway, Mountain View</br>
-							California 55000
-							</li>
-							<li><i class="pe-7s-phone"></i>+1 (123) 456-7890</br>
-							+2 (123) 456-7890
-							</li>
-							<li><i class="pe-7s-mail"></i><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
-							<li><i class="pe-7s-look"></i><a href="#">www.yoursite.com</a></li>
-							</ul>		
-					</div>
-					-->
+		<div class="container">
+			<div class="row contact-row">
+				<div class="text-center download-cta">
+					<img class="tes wow fadeInUp" src="images/logo.png" width="700" height="215">
 				</div>
 			</div>
+		</div>
 	</div>
 </div>
   

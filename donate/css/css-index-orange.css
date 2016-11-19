@@ -28,8 +28,6 @@ html, body {
 
 	width: 100%;
 
-	overflow-x: hidden;
-
 }
 
 body {
@@ -51,8 +49,6 @@ body {
 	color: #777; 
 
 	background: #fff;
-
-	overflow-x:hidden;
 
 	position: relative;
 
@@ -132,8 +128,6 @@ a:hover {
 
 	height: 100%; 
 
-	overflow: visible; 
-
 	background: #fff url(../images/loading.gif) no-repeat center center;
 
 }
@@ -174,6 +168,49 @@ a:hover {
 
 }
 
+.tes {
+	position: relative;
+	max-width: 100%;
+	height: auto;
+	left: 0px;
+	top: 0px;
+}
+
+.tes1 {
+	position: relative;
+	max-width: 500px;
+	height: auto;
+	right: 0px;
+}
+
+.tos {
+	margin-left: 0px;
+	width: 100%;
+}
+
+.babi {
+	position: fixed;
+	right: 0;
+	left: 0;
+}
+
+.kudanil {
+	left: 0;
+	top: 50px;
+}
+
+.kudanil img {
+	width: 100px;
+}
+
+.kudanil h4 {
+	font-size: 15px;
+}
+
+.kudaponi img {
+	height: 115px;
+}
+
 .navbar-default {
 
 	background: rgba(255, 255, 255, 0.95);
@@ -185,6 +222,7 @@ a:hover {
 .navbar-default .navbar-brand {
 
     padding: 10px;
+    height: 60px;
 
 }
 
@@ -215,6 +253,8 @@ a:hover {
     color: #d27e04;
 
 }
+
+
 
 .btn-default {
 
@@ -256,6 +296,7 @@ a:hover {
 
 .beras {
 
+	margin-top: 150px;
 	align: center; 
 
 	right: 0px; 
@@ -270,39 +311,7 @@ a:hover {
 
 }
 
-.konversi {
-  
-  align: center; 
-  width: 100%;
-  display: block;
-	border: 3px	solid #ff7418; 
-  color: #555;
-  background-color: #fff;
-  
-	height: 56px;
-  padding: 10px;
-  font-size: 18px;
-  line-height: 1.33;
-  border-radius: 6px;          
-}
-
-#converse.konversi {
-  
-  align: center; 
-  width: 100%;
-  display: block;
-	border: 3px	solid #ff7418; 
-  color: #555;
-  background-color: #fff;
-  
-	height: 56px;
-  padding: 10px;
-  font-size: 18px;
-  line-height: 1.33;
-  border-radius: 6px;          
-}
-
-#uniq.uniq {
+#converse {
   
   align: center; 
   width: 100%;
@@ -409,12 +418,6 @@ a:hover {
 	height: 72.25px;
 
 }
-
-.logoo img{
-
-	width: 328px; 
-
-	height: 121px;
 
 }
 
@@ -718,10 +721,10 @@ a:hover {
 
 }
 
-.feature-2 .img-rounded{
 
-	border-radius: 10%;
 
+.feature-2 h4 {
+	font-size: 19px;
 }
 
 .subscribe {
@@ -743,8 +746,6 @@ a:hover {
 	margin: 50px auto 150px;
 
 	text-align: center;
-
-	overflow: hidden;
 
 }
 
@@ -980,10 +981,13 @@ a:hover {
 
 	background: white;
 
-	padding: 40px 0 70px;
+	padding: 40px 0 40px;
 
+}
 
-
+#gmbr img {
+	width: 10%;
+	height: auto;
 }
 
 #client h2 {
@@ -1153,20 +1157,15 @@ a:hover {
 .download-cta {
 
 	padding: 50px 0 50px;
-
+padding-
 }
-
-
 
 #contact{
 
 	width:100%;
 
 	min-height: 100%;
-
 }
-
-
 
 #contact  h2{
 
@@ -1174,7 +1173,9 @@ a:hover {
 
 }
 
-
+.hiu {
+	top: 0px;
+}
 
 .ul-address a {
 
@@ -1542,14 +1543,6 @@ a:hover {
 
 }
 
-.control-group .controls {
-
-	overflow-x: hidden;
-
-}
-
-
-
 @media screen and (min-width: 0px) and (max-width: 720px){
 
   #contact { 
@@ -1560,8 +1553,9 @@ a:hover {
 
 }
 
-
-
+.tomket {
+	display: none;
+}
 
 
 /* iPads (portrait) ----------- */
@@ -1573,6 +1567,19 @@ and (min-width : 768px)
 and (max-width : 1024px) 
 
 and (orientation : portrait) {
+
+	#intro h2{
+ 		text-align: center;
+ 	}
+
+	.beras, .landing-text, .beras-text, .signup-header, .intro-text, .intro-pic, #client img, .feature-2-text, .feat-list,
+	.feature-2 i, .feat-img, .download-cta, #download h2, #download p{
+		animation: none;
+	}
+	
+	#feature-2 h4 {
+		font-size: 25px;
+	}
 
 	.head-btn {
 
@@ -1612,7 +1619,7 @@ and (orientation : portrait) {
 
 	}
 
-	#intro h2, #feature-2 h2 {
+	#intro h2, #feature-2 h2, #client h2 {
 
 		text-align: center;
 
@@ -1666,9 +1673,9 @@ and (orientation : portrait) {
 
 		margin: 10px 0 10px;
 
-		max-height: 40px;
+		max-height: 150px;
 
-	}	
+	}
 
 	.video-header {
 
@@ -1688,9 +1695,28 @@ and (orientation : portrait) {
 
 	}
 
+	.kudanil {
+		left: 0;
+		top: 30px;
+	}
+
+	.kudanil img {
+		width: 65px;
+	}
+
+	.kudanil h4 {
+		font-size: 10px;
+	}
+
+	.kudaponi img {
+		height: 55px;
+	}
+
+	.tomket {
+		display: none;
+	}
+
 }
-
-
 
 /* iPads (landscape) ----------- */
 
@@ -1701,6 +1727,19 @@ and (min-width : 768px)
 and (max-width : 1024px) 
 
 and (orientation : landscape) {
+
+	#intro h2{
+ 		text-align: center;
+ 	}
+
+	.beras, .landing-text, .beras-text, .signup-header, .intro-text, .intro-pic, #client img, .feature-2-text, .feat-list,
+	.feature-2 i, .feat-img, .download-cta, #download h2, #download p{
+		animation: none;
+	}
+
+	#feature-2 h4 {
+		font-size: 25px;
+	}
 
 	.logo {
 
@@ -1758,14 +1797,35 @@ and (orientation : landscape) {
 
 	#client img {
 
-		max-height: 45px;
+		max-height: 150px;
 
-	}	
+	}
 
 	.video-header {
 
 		margin: 50px 0 30px;
 
+	}
+
+	.kudanil {
+		left: 0;
+		top: 30px;
+	}
+
+	.kudanil img {
+		width: 65px;
+	}
+
+	.kudanil h4 {
+		font-size: 10px;
+	}
+
+	.kudaponi img {
+		height: 55px;
+	}
+
+	.tomket {
+		display: none;
 	}
 
 }
@@ -1775,6 +1835,33 @@ and (orientation : landscape) {
 /* smart-phone ----------- */
 
 @media (max-width: 767px) {
+
+
+/*CSS animations*/
+	 #overlay, #intro, #client, #tomket, #client, #feature-2, #download, #contact, #footer{
+	 -webkit-animation: none !important;
+	 -moz-animation: none !important;
+	 -o-animation: none !important;
+	 -ms-animation: none !important;
+	 animation: none !important;
+	 }
+
+	 #intro h2{
+ 		text-align: center;
+ 	}
+
+	.beras, .landing-text, .beras-text, .signup-header, .intro-text, .intro-pic, #client img, .feature-2-text, .feat-list,
+	.feature-2 i, .feat-img, .download-cta, #download h2, #download p{
+		animation: none;
+	}
+
+	.btn-default{
+		display: none;
+	}
+
+	#feature-2 h4 {
+		font-size: 20px;
+	}
 
 	.logo {
 
@@ -1806,7 +1893,7 @@ and (orientation : landscape) {
 
 	}
 
-	#intro h2, #feature-2 h2 {
+	#intro h2, #feature-2 h2, #client h2, {
 
 		font-weight: 150;
 
@@ -1880,7 +1967,7 @@ and (orientation : landscape) {
 
 		margin: 10px 0 10px;
 
-	}	
+	}
 
 	.contact-left {
 
@@ -1900,16 +1987,74 @@ and (orientation : landscape) {
 
 	}
 
+	.marmut {
+		display: none;
+	}
+
+	.kudanil h4 {
+		display: none;
+	}
+
+
+	.tomket {
+		display: block;
+	}
+
+	.tomket img {
+		max-width: 500px;
+	}
+
+	.kura2 img {
+		margin-top: 10%;
+	}
 }	
 
 /* iPhone 6Plus (landscape) ----------- */
 
 @media (max-width: 736px) {
 
+		/*CSS animations*/
+	 #overlay, #intro, #client, #tomket, #client, #feature-2, #download, #contact, #footer{
+	 -webkit-animation: none !important;
+	 -moz-animation: none !important;
+	 -o-animation: none !important;
+	 -ms-animation: none !important;
+	 animation: none !important;
+	 }
+
+	 #intro h2{
+ 		text-align: center;
+ 	}
+
+	.beras, .landing-text, .beras-text, .signup-header, .intro-text, .intro-pic, #client img, .feature-2-text, .feat-list,
+	.feature-2 i, .feat-img, .download-cta, #download h2, #download p{
+		animation: none;
+	}
+
+	.tomket {
+		display: block;
+	}
+
+	.tomket img {
+		max-width: 450px;
+	}
+
+	.marmut {
+		display: none;
+	}
+
+	#feature-2 h4 {
+		font-size: 20px;
+	}
+
 	.feature-img {
 
 		margin-top: 0;
 
+	}
+
+	.kura2 img {
+		margin-top: 10%;
 	}
 
 }
@@ -1919,6 +2064,48 @@ and (orientation : landscape) {
 /* iPhone 6 (landscape) ----------- */
 
 @media (max-width: 667px) {
+
+/*CSS animations*/
+	 #overlay, #intro, #client, #tomket, #client, #feature-2, #download, #contact, #footer{
+	 -webkit-animation: none !important;
+	 -moz-animation: none !important;
+	 -o-animation: none !important;
+	 -ms-animation: none !important;
+	 animation: none !important;
+	 }
+
+ 	#intro h2{
+ 		text-align: center;
+ 	}
+
+	.beras, .landing-text, .beras-text, .signup-header, .intro-text, .intro-pic, #client img, .feature-2-text, .feat-list,
+	.feature-2 i, .feat-img, .download-cta, #download h2, #download p{
+		animation: none;
+	}
+
+	.btn-default{
+		display: none;
+	}
+
+	.tomket {
+		display: block;
+	}
+
+	.tomket img {
+		max-width: 350px;
+	}
+
+	.marmut {
+		display: none;
+	}
+
+	.kura2 img {
+		margin-top: 25%;
+	}
+
+	#feature-2 h4 {
+		font-size: 20px;
+	}
 
 	.logo {
 
@@ -1971,6 +2158,40 @@ and (orientation : landscape) {
 /* iPhone 5 (landscape) ----------- */
 
 @media (max-width: 568px){
+
+/*CSS animations*/
+	 #overlay, #intro, #client, #tomket, #client, #feature-2, #download, #contact, #footer{
+	 -webkit-animation: none !important;
+	 -moz-animation: none !important;
+	 -o-animation: none !important;
+	 -ms-animation: none !important;
+	 animation: none !important;
+	 }
+
+	 #intro h2{
+ 		text-align: center;
+ 	}
+
+	.beras, .landing-text, .beras-text, .signup-header, .intro-text, .intro-pic, #client img, .feature-2-text, .feat-list,
+	.feature-2 i, .feat-img, .download-cta, #download h2, #download p{
+		animation: none;
+	}
+
+	.btn-default{
+		display: none;
+	}
+
+	.tomket {
+		display: block;
+	}
+
+	.tomket img {
+		max-width: 400px;
+	}
+
+	#feature-2 h4 {
+		font-size: 15px;
+	}
 
 	.logo {
 
@@ -2070,6 +2291,40 @@ and (orientation : landscape) {
 
 @media (max-width: 480px) {
 
+/*CSS animations*/
+	 #overlay, #intro, #client, #tomket, #client, #feature-2, #download, #contact, #footer{
+	 -webkit-animation: none !important;
+	 -moz-animation: none !important;
+	 -o-animation: none !important;
+	 -ms-animation: none !important;
+	 animation: none !important;
+	 }
+ 	#intro h2{
+ 		text-align: center;
+ 	}
+
+	.beras, .landing-text, .beras-text, .signup-header, .intro-text, .intro-pic, #client img, .feature-2-text, .feat-list,
+	.feature-2 i, .feat-img, .download-cta, #download h2, #download p{
+		animation: none;
+	}
+
+
+	.btn-default{
+		display: none;
+	}
+
+	.tomket {
+		display: block;
+	}
+
+	.tomket img {
+		max-width: 350px;
+	}
+
+	#feature-2 h4 {
+		font-size: 15px;
+	}
+
 	.feat-list i {
 
 		padding-left: 5px;
@@ -2096,10 +2351,44 @@ and (orientation : landscape) {
 
 @media (max-width: 360px) {
 
-	#intro h2, #feature h2, #feature-2 h2 {
+/*CSS animations*/
+	 #overlay, #intro, #client, #tomket, #client, #feature-2, #download, #contact, #footer{
+	 -webkit-animation: none !important;
+	 -moz-animation: none !important;
+	 -o-animation: none !important;
+	 -ms-animation: none !important;
+	 animation: none !important;
+	 }
+
+	#intro h2{
+ 		text-align: center;
+ 	}
+
+	.beras, .landing-text, .beras-text, .signup-header, .intro-text, .intro-pic, #client img, .feature-2-text, .feat-list,
+	.feature-2 i, .feat-img, .download-cta, #download h2, #download p{
+		animation: none;
+	}
+
+	.tomket {
+		display: block;
+	}
+
+	.tomket img {
+		max-width: 300px;
+	}
+
+	#feature-2 h4 {
+		font-size: 15px;
+	}
+
+	#intro h2, #feature h2, #feature-2 h2, #client h2 {
 
 		font-size: 30px;
 
+	}
+
+	#feature-2 h4 {
+		font-size: 15px;
 	}
 
 	.feat-list i {
@@ -2128,6 +2417,40 @@ and (orientation : landscape) {
 
 @media (max-width: 320px) {
 
+/*CSS animations*/
+	 #overlay, #intro, #client, #tomket, #client, #feature-2, #download, #contact, #footer{
+	 -webkit-animation: none !important;
+	 -moz-animation: none !important;
+	 -o-animation: none !important;
+	 -ms-animation: none !important;
+	 animation: none !important;
+	 }
+
+ 	#intro h2{
+ 		text-align: center;
+ 	}
+
+	.beras, .landing-text, .beras-text, .signup-header, .intro-text, .intro-pic, #client img, .feature-2-text, .feat-list,
+	.feature-2 i, .feat-img, .download-cta, #download h2, #download p{
+		animation: none;
+	}
+
+	.overlay{
+		margin-top: -60px;
+	}
+
+	.tomket {
+		display: block;
+	}
+
+	.tomket img {
+		max-width: 280px;
+	}
+
+	#feature-2 h4 {
+		font-size: 15px;
+	}
+
 	.logo {
 
 		margin: 30px 0 20px 0;
@@ -2142,7 +2465,7 @@ and (orientation : landscape) {
 
 	.btn-default {
 
-		font-size: 16px;
+		font-size: 13px;
 
 		margin: 30px 0 10px;
 

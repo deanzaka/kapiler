@@ -1,7 +1,7 @@
 <?php
 
-define ('DB_NAME', 'kapiler');
-define ('DB_USER', 'root');
+define ('DB_NAME', 'kapiler_production');
+define ('DB_USER', 'kapiler_donasi');
 define ('DB_PASSWORD', 'password');
 define ('DB_HOST', 'localhost');
 
@@ -152,7 +152,7 @@ if( isset($_POST['NAME']) )
 		$name = $row['name'];
 		$email = $row['email'];
 		// $phone = $row['phone'];
-		$phone = '085770796993';
+		$phone = '087880762046';
 		$val = $row['val'];
 		$conv = $row['conv'];
 		$code = $row['unique_code'];
@@ -259,7 +259,7 @@ if( isset($_POST['NAME']) )
 				<div class="form-group"">
 					<div class="col-sm-3"></div>
 					<div class="col-sm-9">
-						<p style="color: red; font-weight: bold;">Harap melakukan transfer sesuai jumlah yang tertera di atas sebelum <?php echo $date_msg ?>, pukul <?php echo $time_msg ?> WIB. Tiga angka di belakang digunakan untuk mengkonfirmasi pembayaran anda.</p>
+						<p style="color: red; font-weight: bold;">Harap melakukan transfer sesuai jumlah yang tertera di atas (sudah ditambah dengan tiga angka kode unik). Jika sudah Transfer, silahkan kirim bukti pembayaran via WA ke +6285785761947</p>
 					</div>
 				</div>
 				<div class="form-group"">
@@ -284,7 +284,7 @@ if( isset($_POST['NAME']) )
 				</div>
 				<div class="form-group last">
 					<div class="col-sm-12">		
-						<input type="submit" class="btn btn-warning btn-block btn-lg" value="Konfirmasi transfer">
+						<input type="submit" class="btn btn-warning btn-block btn-lg" value="Saya Sudah Transfer">
 					</div>
 				</div>
 				<br>
@@ -293,7 +293,7 @@ if( isset($_POST['NAME']) )
 			</form>
 		
 		<?php elseif (!$data && !$confirm) : ?>
-			<h3 class="form-title text-center">Please input your transaction code below: </h3>
+			<h3 class="form-title text-center">Silahkan masukan Kode Transaksi Anda: </h3>
 			<!-- <form class="form-header" action="http://moxdesign.us10.list-manage.com/subscribe/post" role="form" method="POST" id="#"> -->
 			<form class="form-header" action="form.php" role="idform" method="POST" id="submit-form">
 				<input type="hidden" name="u" value="503bdae81fde8612ff4944435">
@@ -310,7 +310,7 @@ if( isset($_POST['NAME']) )
 				<div class="form-group"">
 					<div class="col-sm-3"></div>
 					<div class="col-sm-9">
-						<p style="color: red; font-weight: bold;">Error: Transaction ID Not Found. Please input correct Transaction ID.</p>
+						<p style="color: red; font-weight: bold;">Error: Kode Transaksi Salah. Silahkan masukan kode transaksi dengan benar.</p>
 					</div>
 				</div>
 				<?php endif; ?>
